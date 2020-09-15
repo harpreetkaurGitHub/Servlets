@@ -1,5 +1,6 @@
 HelloWorld.class
 HeadInfo.class
 UpdateUserServlet.class
+DeleteUserServlet.class
 CreateUserServlet.class
 CreateServlet.class

@@ -11,9 +11,6 @@ import static java.sql.DriverManager.getConnection;
 
 
 public class UpdateUserServlet extends HttpServlet {
-    public static void main(String[] args) {
-
-    }
     Connection connection;
     public void init(){
         try {

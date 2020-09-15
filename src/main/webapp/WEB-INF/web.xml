@@ -28,6 +28,15 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>deleteUser</servlet-name>
+    <servlet-class>DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteUser</servlet-name>
+    <url-pattern>/deleteServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>getparameter</servlet-name>
     <servlet-class>CreateServlet</servlet-class>
   </servlet>
