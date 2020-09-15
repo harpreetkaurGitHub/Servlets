@@ -19,6 +19,15 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>updateUser</servlet-name>
+    <servlet-class>UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateUser</servlet-name>
+    <url-pattern>/updateServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>getparameter</servlet-name>
     <servlet-class>CreateServlet</servlet-class>
   </servlet>
