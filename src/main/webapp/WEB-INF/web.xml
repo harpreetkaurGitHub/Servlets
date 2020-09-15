@@ -6,17 +6,16 @@
   <display-name>Archetype Created Web Application</display-name>
   <welcome-file-list>
     <welcome-file>hello.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
   <display-name>getParameterdemo</display-name>
   <servlet>
     <servlet-name>getHeadInfo</servlet-name>
-    <servlet-class>CreateServlet</servlet-class>
+    <servlet-class>CreateUserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>getHeadInfo</servlet-name>
-    <url-pattern>/getHeadInfomation</url-pattern>
+    <url-pattern>/addServlet</url-pattern>
   </servlet-mapping>
 
   <servlet>

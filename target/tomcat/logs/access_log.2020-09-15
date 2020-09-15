@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:17:07:16 +0530] "GET /addUser.html HTTP/1.1" 304 - http-bio-8080-exec-1 41
+0:0:0:0:0:0:0:1 - - [15/Sep/2020:17:07:21 +0530] "POST /addServlet HTTP/1.1" 200 23 http-bio-8080-exec-3 446
