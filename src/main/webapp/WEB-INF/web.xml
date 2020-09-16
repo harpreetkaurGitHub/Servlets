@@ -9,18 +9,19 @@
   </welcome-file-list>
 
   <display-name>getParameterdemo</display-name>
+
   <servlet>
-    <servlet-name>getHeadInfo</servlet-name>
-    <servlet-class>CreateUserServlet</servlet-class>
+    <servlet-name>createUser</servlet-name>
+    <servlet-class>ServletAnnotation.CreateByAnnotation</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>getHeadInfo</servlet-name>
+    <servlet-name>createUser</servlet-name>
     <url-pattern>/addServlet</url-pattern>
   </servlet-mapping>
 
   <servlet>
     <servlet-name>updateUser</servlet-name>
-    <servlet-class>UpdateUserServlet</servlet-class>
+    <servlet-class>ServletAnnotation.UpdateByAnnotation</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>updateUser</servlet-name>
@@ -29,7 +30,7 @@
 
   <servlet>
     <servlet-name>deleteUser</servlet-name>
-    <servlet-class>DeleteUserServlet</servlet-class>
+    <servlet-class>ServletAnnotation.DeleteByAnnotation</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>deleteUser</servlet-name>
