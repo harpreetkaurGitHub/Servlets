@@ -1,3 +1,5 @@
+package ServletAnnotation;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -9,15 +11,16 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 import static java.sql.DriverManager.getConnection;
 
-public class UpdateUserServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/deleteServlet",initParams = {@WebInitParam(name = "conn",value = "jdbc:mysql://localhost:3306/mydb"),
+        @WebInitParam(name = "dbUser",value = "harpreet"),@WebInitParam(name = "dbPass",value = "00000000")})
+public class DeleteByAnnotation extends HttpServlet{
     Connection connection;
-    public void init(){
+    public void init(ServletConfig config){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = getConnection("jdbc:mysql://localhost:3306/mydb","harpreet","00000000");
+            connection = getConnection(config.getInitParameter("conn"),config.getInitParameter("dbUser"),config.getInitParameter("dbPass"));
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -30,13 +33,13 @@ public class UpdateUserServlet extends HttpServlet {
 
         try {
             Statement statement = connection.createStatement();
-            int result = statement.executeUpdate("update user set password = '"+password+"' where email = '"+email+"'");
+            int result = statement.executeUpdate("delete from user where email = '"+email+"'");
             PrintWriter out = response.getWriter();
             if (result>0) {
-                out.print("<H1> USER UPDATED </H1>");
+                out.print("<H1> USER DELETED </H1>");
             }
             else {
-                out.print("<H1> ERROR UPDATING THE USER </H1>");
+                out.print("<H1> ERROR !! PLEASE CORRECT YOUR EMAIL </H1>");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -53,3 +56,4 @@ public class UpdateUserServlet extends HttpServlet {
     }
 
 }
+
