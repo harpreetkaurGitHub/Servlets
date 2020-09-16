@@ -1,2 +1,0 @@
-0:0:0:0:0:0:0:1 - - [15/Sep/2020:22:36:12 +0530] "GET /deleteUser.html HTTP/1.1" 304 - http-bio-8080-exec-1 99
-0:0:0:0:0:0:0:1 - - [15/Sep/2020:22:36:17 +0530] "POST /deleteServlet HTTP/1.1" 200 23 http-bio-8080-exec-3 1099
