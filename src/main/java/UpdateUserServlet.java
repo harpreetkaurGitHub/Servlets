@@ -1,6 +1,3 @@
-import javax.servlet.ServletConfig;
-import javax.servlet.annotation.WebInitParam;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,12 +9,15 @@ import java.sql.Statement;
 
 import static java.sql.DriverManager.getConnection;
 
+
 public class UpdateUserServlet extends HttpServlet {
     Connection connection;
     public void init(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = getConnection("jdbc:mysql://localhost:3306/mydb","harpreet","00000000");
+            String username = "harpreet";
+            String pass = "00000000";
+            connection = getConnection("jdbc:mysql://localhost:3306/mydb",username,pass);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
