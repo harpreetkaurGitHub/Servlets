@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:00:54:11 +0530] "POST /sourceServlet HTTP/1.1" 200 62 http-bio-8080-exec-1 285
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:00:54:18 +0530] "GET /targetServlet HTTP/1.1" 200 28 http-bio-8080-exec-3 6
