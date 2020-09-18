@@ -1,1 +1,2 @@
-0:0:0:0:0:0:0:1 - - [18/Sep/2020:13:54:11 +0530] "POST /averageController HTTP/1.1" 200 104 http-bio-8080-exec-1 2144
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:18:08:37 +0530] "POST /sourceServlet HTTP/1.1" 200 61 http-bio-8080-exec-1 174
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:18:08:39 +0530] "GET /targetServlet HTTP/1.1" 200 28 http-bio-8080-exec-3 13
