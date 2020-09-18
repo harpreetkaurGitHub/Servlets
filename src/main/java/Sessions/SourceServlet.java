@@ -18,6 +18,8 @@ public class SourceServlet extends HttpServlet {
         session.setAttribute("user",userName);
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.print("<a href = 'targetServlet'>Click here to get the username </a>");
+        String url = "targetServlet?sessionId=0000";
+        out.print("<a href = 'targetServlet'>Click here to get the username </a><br>");
+        out.print("<a href ='" +url+"'>Click here to get the username by url Re-writting just hover on the url </a>");
         }
     }
