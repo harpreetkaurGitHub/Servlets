@@ -14,10 +14,6 @@ public class SourceServlet extends HttpServlet {
         session.setAttribute("user",userName);
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.print("<a href = 'targetServlet'>Cick here to get the username </a>");
-
-
-
-
+        out.print("<a href = 'targetServlet'>Click here to get the username </a>");
         }
     }

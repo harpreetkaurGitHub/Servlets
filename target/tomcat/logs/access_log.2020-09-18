@@ -1,2 +1,4 @@
-0:0:0:0:0:0:0:1 - - [18/Sep/2020:00:54:11 +0530] "POST /sourceServlet HTTP/1.1" 200 62 http-bio-8080-exec-1 285
-0:0:0:0:0:0:0:1 - - [18/Sep/2020:00:54:18 +0530] "GET /targetServlet HTTP/1.1" 200 28 http-bio-8080-exec-3 6
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:11:16:56 +0530] "GET /indexFilter.jsp HTTP/1.1" 200 817 http-bio-8080-exec-1 1414
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:11:17:05 +0530] "GET /servlet1?username=harpreet&password=123 HTTP/1.1" 200 1016 http-bio-8080-exec-3 39
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:11:18:17 +0530] "GET /servlet1?username=admin&password=admin HTTP/1.1" 200 257 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [18/Sep/2020:11:18:52 +0530] "GET /servlet1?username=ishu&password=admin HTTP/1.1" 200 257 http-bio-8080-exec-7 2

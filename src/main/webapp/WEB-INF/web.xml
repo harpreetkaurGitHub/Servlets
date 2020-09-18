@@ -133,6 +133,23 @@
   <listener>
     <listener-class>Listners.AppContext</listener-class>
   </listener>
+
+  <servlet>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>Filters.AdminFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>Login</filter-name>
+    <filter-class>Filters.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Login</filter-name>
+    <url-pattern>/servlet1</url-pattern>
+  </filter-mapping>
 </web-app>
 
 
