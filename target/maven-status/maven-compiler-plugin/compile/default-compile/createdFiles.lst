@@ -1,10 +1,12 @@
 Product.class
+MVC/AverageCalculatorModel.class
 Filters/LoginFilter.class
 Listners/AppContext.class
 CreateServlet.class
 RequestDispacher/HomeServlet.class
 Sessions/TargetServlet.class
 CreateUserServlet.class
+MVC/AverageController.class
 HelloWorld.class
 HeadInfo.class
 Filters/AdminFilter.class

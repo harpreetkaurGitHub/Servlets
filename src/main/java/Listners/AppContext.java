@@ -13,15 +13,14 @@ public class AppContext implements ServletContextListener {
         String user = servletContext.getInitParameter("DBUSER");
         String password = servletContext.getInitParameter("DBPWD");
 
-
         DBConnectionManager dbManager = new DBConnectionManager(url, user, password);
         servletContext.setAttribute("DBManager", dbManager);
         System.out.println("Database connection initialized for Application.");
     }
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        ServletContext ctx = servletContextEvent.getServletContext();
-        DBConnectionManager dbManager = (DBConnectionManager) ctx.getAttribute("DBManager");
+        ServletContext servletContext = servletContextEvent.getServletContext();
+        DBConnectionManager dbManager = (DBConnectionManager) servletContext.getAttribute("DBManager");
         dbManager.closeConnection();
         System.out.println("Database connection closed for Application.");
 

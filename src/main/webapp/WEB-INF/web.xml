@@ -135,6 +135,15 @@
   </listener>
 
   <servlet>
+    <servlet-name>averageConroller</servlet-name>
+    <servlet-class>MVC.AverageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>averageConroller</servlet-name>
+    <url-pattern>/averageController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>Admin</servlet-name>
     <servlet-class>Filters.AdminFilter</servlet-class>
   </servlet>
